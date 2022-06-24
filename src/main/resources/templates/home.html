@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}">ProfProgress</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+<p th:text="${title}"/>
+<header th:insert="blocks/header  :: header"></header>
+<h1>Каталог продукции</h1>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+        <div class="card shadow-sm">
+            <img src="https://mplast.by/wp-content/uploads/2019/01/zapornaia-armatura-024.png"/>
+            <text x="25%" y="50%" fill="#eceeef" dy=".3em">ТРУБОПРОВОДНАЯ АРМАТУРА</text>
+            </svg>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"><a href="/truboprovodn">Подробнее</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card shadow-sm">
+            <img src="https://slavutich.cn.ua/image/news_small/2021/02/09_074912_news2_dairy-pharma-fittings.jpg" width="100%" height="315"/>
+                <text x="2%" y="50%" fill="#eceeef" dy=".3em">ХИМИЧЕСКАЯ НЕРЖАВЕЮЩАЯ ТРУБОПРОВОДНАЯ АРМАТУРА</text>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"><a href="/nerjaveushc">Подробнее</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card shadow-sm">
+          <img src="https://wentprom.ru/site/image/br_main_1.png" width="100%" height="315"/>
+                <text x="25%" y="50%" fill="#eceeef" dy=".3em">ВЕНТИЛЯЦИОННОЕ ОБОРУДОВАНИЕ</text>
+            </svg>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"><a href="/ventilyator">Подробнее</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer th:insert="blocks/footer  :: footer"></footer>
+</body>
+</html>

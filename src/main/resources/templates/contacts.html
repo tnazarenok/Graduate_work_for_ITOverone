@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}">ProfProgress</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+<p th:text="${title}"/>
+<header th:insert="blocks/header  :: header"></header>
+<p>
+<h1>Контакты</h1>
+</p>
+<h3>
+    <p>Республика Беларусь, 220073, г. Минск, ул. Ольшевского 10, пом. 303</p>
+    <p>Тел/факс: + 375 (17)399-42-10(09), 2-350-131 ;</p>
+    <p>GSM: + 375 (44)  745-55-73</p>
+    <p>e-mail: info@eic.by</p>
+</h3>
+</p>
+
+
+<footer th:insert="blocks/footer  :: footer"></footer>
+</body>
+</html>
